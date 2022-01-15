@@ -8,9 +8,10 @@ A simple moving average (SMA) is an arithmetic moving average calculated by addi
 
 The trader should invest when the shorter term SMA is above the longer term SMA whereas they should go short when the shorter term SMA is below the longer term SMA.
 Use the Optimize SMA tool to find the optimum value of SMA short and SMA long for any company for a specified period of time. The algorithm iterates over 4000 possible combinations of SMA long and short to find the most profitable combination.
-![Alt text](images/Visualize.png)
+![Alt text](Images/SMA.png)
 
 ## 3. Use Machine Learning based algorithms
 In machine learning, classification refers to a predictive modeling problem where a class label is predicted for a given example of input data. Some of the most commonly used classification algorithms are- Logistic Regression, Naive Bayes, Stochastic Gradient Descent, K-Nearest Neighbours, Decision Tree, Random Forest, Artificial Neural Network, and Support Vector Machine.
 
 Use Logistic Regression or Decision Trees to predict future returns.
+![Alt text](Images/ML.png)
