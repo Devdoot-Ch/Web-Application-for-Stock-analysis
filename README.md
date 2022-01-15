@@ -1,7 +1,7 @@
 # Web-Application-for-Stock-analysis
 ## 1. Visualize
 Plot a price chart as well as a candlestick chart for any particular stock for a specified period of time using the visualization tool.
-![Test](/images/visualize.png)
+![Test](images/Visualize.png)
 
 ## 2. Find optimal value for Simple Moving Average
 A simple moving average (SMA) is an arithmetic moving average calculated by adding recent prices and then dividing that figure by the number of time periods in the calculation average. For example, one could add the closing price of a stock for a number of time periods and then divide this total by that same number of periods. Short-term averages respond quickly to changes in the price of the underlying security, while long-term averages are slower to react.
