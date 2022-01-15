@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends "graphApp/base.html" %}
+{% load static %}
+    {% block title_block %}
+    <title>Optimized SMA</title>
+    {% endblock %}
+
+    {% block body_block %}
+    <h1>Find optimum values of SMA short and SMA long</h1>
+    <p></p>
+    <form action="" method="POST" id="stockform">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" class="btn btn-primary" value="Optimize" />
+    </form>
+    
+    <p></p>
+    <div id="loader" style='display: none;'>
+        <h4>Please wait</h4>
+    </div>
+    <div id="forTable"></div>
+
+    <script src="{% static 'javascript/scriptOSMA.js' %}"></script>
+    {% endblock %}

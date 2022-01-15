@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends "graphApp/base.html" %}
+{% load static %}
+    {% block title_block %}
+    <title>Backtest using ML</title>
+    {% endblock %}
+
+    {% block body_block %}
+    <p></p>
+    <h1>Backtest using Machine Learning</h1>
+    <h3><b>Lags-</b> Lags here refers to the number of previous days that are used to make the predictions.</h3>
+    <p></p>
+    <form action="" method="POST" id="stockform">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" class="btn btn-primary" value="Train" />
+    </form>
+    
+    <div id="plotgraph" style="width:100%;max-width:1000px;height:800px"></div>
+    <script src="{% static 'javascript/scriptML.js' %}"></script>
+    {% endblock %}

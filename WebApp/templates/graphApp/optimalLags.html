@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends "graphApp/base.html" %}
+{% load static %}
+    {% block title_block %}
+    <title>Find Optimal lags</title>
+    {% endblock %}
+
+    {% block body_block %}
+    <p></p>
+    <h1>Find optimal number of lags</h1>
+    <h3><b>Lags-</b> Lags here refers to the number of previous days that are used to make the predictions.</h3>
+    <p></p>
+    <form action="" method="POST" id="stockform">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" class="btn btn-primary" value="Optimize" />
+    </form>
+    
+    <p></p>
+    <div id="loader" style='display: none;'>
+        <h4>Please wait</h4>
+    </div>
+    <div id="forTable"></div>
+
+    <script src="{% static 'javascript/scriptOLags.js' %}"></script>
+    {% endblock %}

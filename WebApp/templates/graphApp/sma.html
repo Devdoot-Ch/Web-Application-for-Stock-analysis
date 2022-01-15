@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends "graphApp/base.html" %}
+{% load static %}
+    {% block title_block %}
+    <title>SMA</title>
+    {% endblock %}
+
+    {% block body_block %}
+    <h1 align='center'>Simple Moving Average</h1>
+    <form action="" method="POST" id="stockform">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" class="btn btn-primary" value="Plot" />
+    </form>
+
+    <div id="plotgraph" style="width:100%;max-width:1000px;height:800px"></div>
+    <script src="{% static 'javascript/scriptSMA.js' %}"></script>
+    {% endblock %}
